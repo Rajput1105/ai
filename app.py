@@ -7,7 +7,7 @@ from PyPDF2 import PdfReader
 import smtplib
 from email.message import EmailMessage
 
-# ---- CONFIG ----
+
 
 
 RESUME_FOLDER = "uploaded_resumes"
@@ -15,7 +15,7 @@ genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 EMAIL_SENDER = st.secrets["EMAIL_SENDER"]
 EMAIL_PASSWORD = st.secrets["EMAIL_PASSWORD"]
 
-# ---- FUNCTIONS ----
+
 def extract_text(file):
     if file.name.endswith(".pdf"):
         reader = PdfReader(file)
@@ -92,6 +92,6 @@ if uploaded_files:
             candidate_name = extract_name(analysis)
             if candidate_email:
                 send_email(candidate_email, "Your Resume Feedback", f"Hi {candidate_name},\n\n{analysis}\n\nBest of luck!")
-                st.success(f"✅ Email sent to {candidate_email}")
+                st.success(f" Email sent to {candidate_email}")
             else:
-                st.error("❌ Email not found in analysis.")
+                st.error(" Email not found in analysis.")
