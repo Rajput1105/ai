@@ -8,11 +8,12 @@ import smtplib
 from email.message import EmailMessage
 
 # ---- CONFIG ----
-genai.configure(api_key="AIzaSyBSoUkArt6WXJ-F8HyaqJ-JL9XzmSKKA0M")
-EMAIL_SENDER ="w86447748@gmail.com@gmail.com"
-EMAIL_PASSWORD = "R@110503"
+
 
 RESUME_FOLDER = "uploaded_resumes"
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+EMAIL_SENDER = st.secrets["EMAIL_SENDER"]
+EMAIL_PASSWORD = st.secrets["EMAIL_PASSWORD"]
 
 # ---- FUNCTIONS ----
 def extract_text(file):
