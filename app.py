@@ -9,8 +9,8 @@ from email.message import EmailMessage
 
 # ---- CONFIG ----
 genai.configure(api_key="AIzaSyBSoUkArt6WXJ-F8HyaqJ-JL9XzmSKKA0M")
-EMAIL_SENDER = st.secrets["EMAIL_SENDER"]
-EMAIL_PASSWORD = st.secrets["EMAIL_PASSWORD"]
+EMAIL_SENDER ="w86447748@gmail.com@gmail.com"
+EMAIL_PASSWORD = "R@110503"
 
 RESUME_FOLDER = "uploaded_resumes"
 
