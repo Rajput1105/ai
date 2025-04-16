@@ -72,7 +72,7 @@ job_description = st.text_area("Enter Job Description", "Looking for candidates 
 
 uploaded_files = st.file_uploader("Upload Resumes (.pdf or .docx)", type=["pdf", "docx"], accept_multiple_files=True)
 
-send_email_option = st.checkbox("Send email feedback to candidate")
+send_email_option = st.checkbox("Send email feedback to candidate",value=False)
 
 if uploaded_files:
     for file in uploaded_files:
