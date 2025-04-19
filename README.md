@@ -1,4 +1,4 @@
-# ai
+# Ai Link to Deployment https://cuzw6obmhuehxa6bpk4pnw.streamlit.app/
 ## 🧠 AI Resume Analyzer with Gemini & Streamlit
 
 This project allows you to **analyze resumes** (PDF or DOCX) and compare them against a **Job Description (JD)** using **Google's Gemini AI**, with results including:
